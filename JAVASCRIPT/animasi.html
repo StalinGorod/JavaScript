@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ANIMASI Warna</title>
+</head>
+
+<body>
+    <p class="paragraf">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga mollitia sequi quos sunt
+        laborum facere eligendi veniam, rerum corporis tenetur quia quis officia aperiam placeat repellendus, est
+        obcaecati eum pariatur!</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero similique magni vel
+        laborum impedit, delectus expedita doloribus dolores veritatis accusamus eveniet necessitatibus iure soluta
+        quibusdam iusto ipsa, beatae nemo!</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae perferendis, deleniti
+        reprehenderit sed rem vitae natus delectus voluptatibus doloribus placeat nobis at aspernatur fuga possimus ab
+        veniam minus dolorem aliquid!</p>
+
+    <script>
+        var pg = document.getElementsByClassName("paragraf");
+        // console.log(pg);
+        setInterval(function () {
+            pg[0].style.color = "red";
+            pg[1].style.color = "green";
+            pg[2].style.color = "blue";
+
+            setTimeout(function () {
+                pg[0].style.color = "black";
+                pg[1].style.color = "black";
+                pg[2].style.color = "black";
+            }, 500)
+        }, 100);
+    </script>
+</body>
+
+</html>

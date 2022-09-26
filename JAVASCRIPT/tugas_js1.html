@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TUGAS JavaScript 1</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+    <div class="container mt-5">
+        <div class="bg-white" style="border-radius: 10px; width: 800px; margin-left: 150px;">
+            <h1 class="text-info text-center pt-3 pb-3">PROGRAM PENJUALAN KOMPUTER</h1>
+            <hr>
+            <p class="text-secondary px-3 fs-5">Silahkan pilih jenis barang yang akan dibeli, dan anda
+                akan mengetahui
+                berapa
+                harganya.</p>
+            <h6 class="ps-3">Barang</h6>
+            <select name="barang" id="barang" class="ms-3 p-1"
+                style="border-radius:5px; width: 765px; border: 3px solid lightblue;">
+                <option value="">- Pilih Barang -</option>
+                <option value="laptop">Laptop</option>
+                <option value="keyboard">Keyboard</option>
+                <option value="mouse">Mouse</option>
+            </select>
+            <h6 class="ps-3">Discount</h6>
+            <input type="text" id="discount" class="ms-3 ps-2" style="border-radius: 5px;width: 765px;">
+            <br><br>
+            <h6 class="ps-3">Harga Jual</h6>
+            <input type="text" id="harga" class="ms-3 mb-4 p-3"
+                style="background-color: red; border-radius:5px;width: 765px;">
+        </div>
+    </div>
+
+    <script>
+        var br = document.getElementById('barang');
+        var ds = document.getElementById('discount');
+        var hg = document.getElementById('harga');
+
+
+        br.addEventListener('change', function () {
+            // console.log(br.value);
+            if (br.value == 'laptop') {
+                ds.value = '10%';
+                hg.value = '7500000' - '750000';
+            }
+            else if (br.value == 'keyboard') {
+                ds.value = '10%';
+                hg.value = '100000' - '10000';
+            } else {
+                ds.value = '10%';
+                hg.value = '75000' - '7500';
+            }
+        })
+    </script>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</html>

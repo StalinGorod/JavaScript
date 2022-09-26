@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tugas</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <input type="button" value="Red" onclick="warna('Red')">
+    <input type="button" value="Blue" onclick="warna('Blue')">
+    <input type="button" value="Green" onclick="warna('Green')">
+
+    <script>
+        var box = document.getElementById("box");
+
+        box.style.width = "400px";
+        box.style.height = "200px";
+        box.style.marginBottom = "10px";
+
+        function warna(color) {
+            box.style.background = color;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="star">
+    <button onclick="jumlah()" value="Нажмите здесь">Нажмите здесь</button>
+
+    <script>
+        function jumlah() {
+            var a = document.getElementById("star").value;
+
+            for (let i = 1; i <= a; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

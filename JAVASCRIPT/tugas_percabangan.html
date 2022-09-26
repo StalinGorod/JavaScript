@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tugas Percabangan</title>
+</head>
+
+<body>
+    <h1>Program Mencari Grade Nilai</h1>
+    Input Nilai <br>
+    <input type="text" id="nilai">
+    <br><br>
+    <button onclick="hasil()" value="cek">Cek</button>
+    <br><br>
+    <div><span id="grade"></span></div>
+
+    <script>
+        function hasil() {
+            var a = document.getElementById("nilai").value;
+            var b = document.getElementById("grade");
+
+            if (a >= 90 && a <= 100) {
+                b.innerHTML = "A";
+            } else if (a >= 80 && a <= 89) {
+                b.innerHTML = "B";
+            } else if (a >= 75 && a <= 79) {
+                b.innerHTML = "C";
+            }
+            else if (a < 75 && a >= 65) {
+                b.innerHTML = "D";
+            } else if (a < 65 && a >= 0) {
+                b.innerHTML = "belajar lagi bang";
+            } else {
+                b.innerHTML = "yang bener lu bang";
+            }
+        }
+    </script>
+</body>
+
+</html>

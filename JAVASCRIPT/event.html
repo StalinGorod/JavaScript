@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Belajar Event - JavaScript</title>
+</head>
+
+<body>
+    <button onclick="hello()">Hello</button>
+    <button id="a">World!</button>
+
+
+    <script>
+        // tombol 1
+        function hello() {
+            alert("Hello World!");
+        }
+
+        // tombol 2
+        var tombola = document.getElementById('a');
+        tombola.addEventListener('dblclick', function () {
+            alert("Hello World!");
+        })
+    </script>
+</body>
+
+</html>
